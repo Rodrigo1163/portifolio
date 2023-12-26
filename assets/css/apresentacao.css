@@ -1,0 +1,65 @@
+.apresentacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12em;
+    gap: 10px;
+    grid-area: apresentacao;
+}
+
+.fotoPerfil{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.2s;
+    border: 3px solid white;
+}
+.fotoPerfil:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.descricao{
+    line-height: 30px;
+}
+.containerApresentação{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.action{
+    display: flex;
+    gap: 18px;
+}
+.action button{
+    width: 10em;
+    height: 3em;
+    transition: 200ms;
+    border-radius: 4px;
+}
+.btnCurriculo{
+    border: none;
+    outline: none;
+    background-color: var(--action-color);
+    cursor: pointer;
+}
+.btnCurriculo:hover{
+    transform: scale(1.1, 1.1);
+    background-color: var(--action-bg-hover-curriculo);
+}
+
+.btnEmail{
+    border: 1px solid var(--subtitle-color);
+    outline: none;
+    background-color: var(--bg-primery);
+    cursor: pointer;
+}
+.btnEmail:hover{
+    background-color: var(--text-dark);
+    transform: scale(1.1, 1.1);
+}
+a{
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 20px;
+}

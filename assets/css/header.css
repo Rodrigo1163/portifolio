@@ -1,0 +1,102 @@
+header{
+    grid-area: header;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bg-primery);
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    height: 2em;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 1075px;
+}
+.nav-itens{
+    display: flex;
+    gap: 20px;
+}
+.nav-itens li, .nav-itens a{
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.2s;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.nav-itens li:hover{
+    transform: scale(1.2, 1.2);
+}
+.nav-itens a:hover{
+    border-radius: 4px;
+    font-weight: 550;
+}
+.logo{
+    font-weight: 1000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 100ms;
+}
+.logo:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.btnCheck{
+    outline: none;
+    border: none;
+    border-radius: 10em;
+    width: 14px;
+    height: 14px;
+    color: black;
+    cursor: pointer;
+    background-color: var(--bg-primery);
+    transition: all 300ms ease-in-out;  
+    
+}
+.buttonDarkMode{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    width: 3em;
+    height: 1em;
+    background-color: var(--text-light);
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+/* mudaça de cores */
+
+#darkModeContainer, #darkModeNav, #darkModeMain{
+    display: none;
+}
+
+#darkModeContainer:checked ~ .container{
+    background-color: var(--bg-primery-light);
+    color: black;
+}
+#darkModeContainer:checked ~ .container h2{
+    background-color: var(--bg-primery-light);
+    color: black;
+}
+#darkModeNav:checked ~ nav{
+    background-color: var(--bg-primery-light);
+   color: black;
+}
+#darkModeNav:checked ~ nav a{
+    background-color: var(--bg-primery-light);
+    color: black;
+}
+#darkModeNav:checked ~ nav .buttonDarkMode{
+    background-color: rgb(0, 0, 0);
+}
+#darkModeNav:checked ~ nav .buttonDarkMode .btnCheck{
+    background-color: var(--bg-primery-light);
+    margin-left: 60%;
+}

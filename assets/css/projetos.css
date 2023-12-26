@@ -1,0 +1,52 @@
+
+.projetos{
+    padding-top: 12em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: projetos;
+}
+.containerProjetos{
+    display: flex;
+    margin-top: 3em;
+    gap: 20px;
+}
+#projetos img{
+    border-radius: 8px;
+    width: 100%;
+}
+.boxProjetos{
+    height: 20em;
+    width: 20em;
+    transition: 100ms;
+    
+}
+.boxProjetos:hover{
+    transform: scale(1.1, 1.1);
+
+}
+.boxProjetos img{
+    object-fit: cover;
+    height: 100%;
+}
+
+
+#tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#projetos p{
+    font-size: 1rem;
+    color: rgb(211, 211, 211);
+
+}
+#tecnologias img{
+    display: flex;
+    width: 2rem;
+}
+
+
+

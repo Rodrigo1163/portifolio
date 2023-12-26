@@ -1,0 +1,105 @@
+.contatos{
+    display: flex;
+    align-items:center;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 12em;
+    grid-area: contatos;
+}
+.containerContatos{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 3em;
+}
+.link{
+    color: white;
+    padding: 50px;
+    transition: 0.2s;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.link:hover{
+    transform: scale(1.2);
+    
+    
+}
+.email, .telefone, .linkedin, .github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+}
+.email img{
+    background-color: var(--color-email);
+    border: 5px solid var(--color-email);
+}
+.linkedin img{
+    background-color: var(--color-linkedin);
+    border: 5px solid var(--color-linkedin);
+}
+.github img{
+    background-color: var(--color-github);
+    border: 5px solid var(--color-github);
+}
+.telefone img{
+    background-color: var(--color-telefone);
+    border: 5px solid var(--color-telefone);
+}
+.containerContatos img{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+   
+}
+.containerContatos a{
+    text-decoration: none;
+    
+}
+
+.whatsapp img{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+    transition: 200ms;
+}
+.whatsapp img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/* mudaça de cores dos icones de contatos */
+
+#darkModeMain:checked ~ .contatos .containerContatos .email{
+    background-color: black;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .email img{
+    background-color: white;
+    border: 5px solid white;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .telefone{
+    background-color: black;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .telefone img{
+    background-color: white;
+    border: 5px solid white;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .linkedin{
+    background-color: black;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .linkedin img{
+    background-color: white;
+    border: 5px solid white;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .github{
+    background-color: black;
+}
+#darkModeMain:checked ~ .contatos .containerContatos .github img{
+    background-color: white;
+    border: 5px solid white;
+}

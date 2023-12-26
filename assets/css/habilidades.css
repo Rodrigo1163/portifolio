@@ -1,0 +1,102 @@
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13em;
+    align-items: center;
+    margin: 0 auto;
+    grid-area: habilidades;
+}
+.containerHabilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    background-color: var(--tecnologias);
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 18px;
+    gap: 14px;
+    margin-top: 2em;
+    transition: 0.2s;
+    user-select: none;
+    
+
+    
+}
+
+.habilidades .imgHabilidade{
+    width: 100px;
+    display: flex;
+    
+}
+
+.box:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    background-color: #441840;
+}
+#html:checked:hover ~ .js{
+    background-color: grey;
+    opacity: 0.2;
+    
+}
+#html:checked:hover ~ .css{
+    background-color: grey;
+    opacity: 0.2;
+    
+}
+#html:checked:hover ~ .git{
+    background-color: grey;
+    opacity: 0.2;
+    
+}
+#css:checked:hover ~ .html{
+    background-color: grey;
+    opacity: 0.2;
+}
+#css:checked:hover ~ .js{
+    background-color: grey;
+    opacity: 0.2;
+}
+#css:checked:hover ~ .git{
+    background-color: grey;
+    opacity: 0.2;
+}
+#js:checked:hover ~ .html{
+    background-color: grey;
+    opacity: 0.2;
+}
+#js:checked:hover ~ .css{
+    background-color: grey;
+    opacity: 0.2;
+}
+#js:checked:hover ~ .git{
+    background-color: grey;
+    opacity: 0.2;
+}
+
+/* ------------------------- */
+#git:checked:hover ~ .html{
+    background-color: grey;
+    opacity: 0.2;
+}
+#git:checked:hover ~ .css{
+    background-color: grey;
+    opacity: 0.2;
+}
+#git:checked:hover ~ .js{
+    background-color: grey;
+    opacity: 0.2;
+}
+#html, #css, #js, #git{
+    display: none;
+    
+}

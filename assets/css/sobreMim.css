@@ -1,0 +1,11 @@
+.sobreMim{
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 16em;
+    grid-area: sobreMim;
+}
+.sobreMim p{
+    margin-top: 10px;
+}

@@ -1,0 +1,266 @@
+:root{
+    --bg-primery: #000000;
+    --text-light: #FFFFFF;
+    --text-dark: #242424;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --action-bg-hover-curriculo: #6db0f0;
+    --tecnologias: #3d237c;
+    --color-email: red;
+    --color-linkedin: rgb(0, 45, 128);
+    --color-github: #ffffff;
+    --color-telefone: green;
+}
+ 
+
+.headerMobile{
+    display: none;
+}
+.closeMenu☰{
+    display: none;
+}
+.closeMenuX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: black;
+    
+}
+#ckeckCloseMenu{
+    display: none;
+}
+
+
+#ckeckCloseMenu:checked ~ .headerMobile{
+    background-color: #441840;
+    color: black;
+}
+#darkModeNav:checked ~ .headerMobile{
+    background-color: rgb(230, 230, 230);
+    color: black;
+ }
+#darkModeNav:checked ~ .headerMobile .closeMenuX{
+    color: white;
+ }
+ #darkModeNav:checked ~ .headerMobile h1{
+    color: black;
+}
+@media(max-width: 768px){
+    .containerContatos{
+        justify-content: center;
+        gap: 50px;
+    }
+    .containerContatos img{
+        width: 80px;
+        height: 80px;
+    }
+    .email, .telefone, .linkedin, .github{
+        width: 5%;
+    }
+}
+@media (max-width: 425px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "apresentacao"
+        "contatos"
+        "sobreMim"
+        "projetos"
+        "habilidades"
+        ;
+        
+        
+    }
+    .headerMobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        border-bottom: 2px solid #6a3067;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        background-color: #441840;
+        width: 100%;
+        
+        
+    }
+    #ckeckCloseMenu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 4;
+    }
+    .buttonDarkMode{
+        width: 2.5em;
+        height: 1.3em;
+    }
+    .btnCheck{
+        width: 12px;
+        height: 12px;
+    }
+    #darkModeNav:checked ~ .headerMobile .buttonDarkMode .btnCheck{
+        margin-left: 60%;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2em;
+        text-align: left;
+        font-size: 14px;
+        padding-top: 12em;
+    }
+    .apresentacao p{
+        font-size: 16px;
+        color: grey;
+    }
+    .fotoPerfil{
+        width: 250px;
+        height: 250px;
+        border-radius: 5%;
+    }
+    .descricao{
+        line-height: 25px;
+    }
+    .sobreMim{
+        width: 65%;
+        padding-top: 16em;
+    }
+    .sobreMim p{
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .habilidades{
+        width: 80%;
+        padding-top: 10em;
+        margin-top: 14em;
+    }
+    .box{
+        width: 40%;
+        gap: 10px;
+        border-radius: 4px;
+        padding: 30px 0 30px 0;
+        margin-top: 0;
+    }
+    .containerHabilidades{
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .habilidades img{
+        width: 50%;
+        
+    }
+    .contatos{
+        margin: 0 auto;
+        padding-top: 0;
+        margin-top: 0;
+        width: 80%;
+        
+    }
+    .contatos h2{
+        display: none;
+    }
+
+    .containerContatos{
+        justify-content: center;
+        gap: 0;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+    .link{
+        padding: 10px;
+    }
+    .email, .telefone, .linkedin, .github{
+        width: 20%;
+    }
+    .containerContatos img{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #441840;
+        
+    }
+
+    .projetos{
+        margin-top: 10em;
+        padding-top: 0;
+        margin-bottom: 10em;
+    }
+    .containerProjetos{
+        width: 10rem;
+        height: 14rem;
+        border-radius: 8px;
+        background-size: 300%;
+        margin-top: 0;
+    }
+    .descricaoProjeto{
+        display: block;
+        opacity: 1;
+        width: 80%;
+    }
+    /* menu Mobile */
+    nav, nav ul{
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        flex-direction: column;
+    }
+    nav{
+        background-color: rgb(33, 0, 39);
+        padding: 0;
+        border: none;
+    }
+    nav .buttonDarkMode{
+        display: none;
+    }
+    .nav-itens{
+        
+    }
+    .links{
+        margin-top: -400px;
+    }
+    .logo{
+        margin-top: -100px;
+    }
+    .ckeckContatos{
+        display: none;
+    }
+    #ckeckCloseMenu:checked ~ nav{
+        display: none;
+    }
+    #ckeckCloseMenu:checked ~ .headerMobile{
+        color: white;
+    }
+    #ckeckCloseMenu:checked ~ .headerMobile .closeMenuX{
+        display: none;
+    }
+    #ckeckCloseMenu:checked ~ .headerMobile .closeMenu☰{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2px;
+        background-color: black;
+
+    }
+    
+    
+    /* menu Mobile */
+}
+
+

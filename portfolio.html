@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio || Rodrigo Sena</title>
+    <link rel="stylesheet" href="/assets/css/globol.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/contatos.css">
+    <link rel="stylesheet" href="/assets/css/projetos.css">
+    <link rel="stylesheet" href="/assets/css/habilidades.css">
+    <link rel="stylesheet" href="/assets/css/sobreMim.css">
+    <link rel="stylesheet" href="/assets/css/apresentacao.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/mediaQuery.css">
+    <script src="/assets/js/portfolio.js" defer></script>
+    <script src="/assets/js/projetos.js" defer></script>
+</head>
+<body>
+    <input type="checkbox" id="darkModeContainer">
+    
+    <header>
+        <input type="checkbox" id="darkModeNav">
+        <input type="checkbox" id="ckeckCloseMenu" checked>
+       
+        <div class="headerMobile">
+            <label title="close menu" id="closeMenu" class="closeMenu☰" for="ckeckCloseMenu">☰</label>
+            <label title="close menu" id="closeMenu" class="closeMenuX" for="ckeckCloseMenu">X</label>
+            <h1>Portfólio</h1>
+            <label class="buttonDarkMode">
+                <p class="btnCheck" id="btnCheck"></p>
+            </label>
+        </div>
+        
+        <nav>
+            <a href="/portfolio.html" class="logo">Rodrigo Sena</a>
+            <div class="links">
+                <ul class="nav-itens" onclick="getElementById('ckeckCloseMenu').checked = true;">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobreMim">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li class="ckeckContatos"><a href="#contatos">Contato</a></li>
+                </ul>
+            </div>
+            
+            <label class="buttonDarkMode">
+                <p class="btnCheck" id="btnCheck"></p>
+            </label>
+             
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <input type="checkbox" id="darkModeMain">
+        <section class="apresentacao" id="inicio">
+            <img src="/img/foto de perfil.png" alt="Foto de Perfil" class="fotoPerfil">
+            
+            <div class="containerApresentação">
+                <div class="descricao">
+                    <h2>Olá, Eu sou o Rodrigo Sena </h2>
+                    <p>Desenvolvedor FRONT-END</p>
+                </div>
+                
+                <div class="action">
+                    <button class="btnCurriculo">
+                        <a href="/assets/curriculo/Currículo Rodrigo Sena.pdf" class="linkCurriculo">Currículo</a>
+                    </button>
+                    <button class="btnEmail">
+                        <a href="mailto:rodrigo.sena1163@gmail.com" class="linkEmail">Email</a>
+                    </button>
+                </div> 
+            </div>
+            
+        </section>
+    
+        <section class="sobreMim" id="sobreMim">
+            <h2>Sobre Mim</h2>
+            <p>Olá, sou o Rodrigo, um entusiasta de tecnologia e desenvolvedor web 
+                apaixonado por transformar ideias criativas em experiências digitais incríveis. 
+                Com sólidos conhecimentos 
+                em HTML, CSS e JavaScript.
+                Cursando 6º período Engenharia da Computação
+            
+            </p>
+        </section>
+    
+        <section class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="containerHabilidades">
+                <input type="checkbox" id="html" checked disabled >
+                <input type="checkbox" id="css" checked disabled >
+                <input type="checkbox" id="js" checked disabled >
+                <input type="checkbox" id="git" checked disabled >
+                
+                <label class="box html" for="html" >
+                    <p>html</p>
+                    <img src="/img/html-5.png" alt="" class="imgHabilidade">
+                </label>
+                <label class="box css" for="css">
+                    <p>CSS</p>
+                    <img src="/img/css-3.png" alt="" class="imgHabilidade">
+                </label>
+                <label class="box js" for="js">
+                    <p>JAVASCRIPT</p>
+                    <img src="/img/js.png" alt="" class="imgHabilidade">
+                </label>
+                <label class="box git" for="git">
+                    <p>GITHUB</p>
+                    <img src="/img/icons8-github-50.png" alt="" class="imgHabilidade">
+                </label>
+    
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+            
+            <div class="containerProjetos">
+                <label for="ckeckDescricao" class="boxProjetos">
+                    <a  href="https://calculadorarodrigosena.netlify.app/"><img src="/img/calculadora/theme1.PNG" alt=""></a>
+                </label>
+                
+                <label for="ckeckDescricao" class="boxProjetos">
+                    <a  href="https://calculandoaidade.netlify.app/tml"><img src="/img/projetoAgeCalculatorApp/calculadoraIdade.PNG" alt=""></a>
+                </label>
+                
+                <label for="ckeckDescricao" class="boxProjetos">
+                    <a  href="https://cpfvalido.netlify.app"> <img src="/img/validadorCPF/validador de cpf.PNG" alt=""></a>
+                </label>
+                
+            </div>
+        </section>
+    
+        <div class="contatos" id="contatos">
+            <h2>Contatos</h2>
+            <div class="containerContatos">
+                <a class="link email" href="mailto:rodrigo.sena1163@gmail.com">
+                    <img src="/img/o-email.png" alt="">
+                </a>
+                <a class="link telefone" href="https://api.whatsapp.com/send/?phone=5592994030985&text&type=phone_number&app_absent=0">
+                    <img src="/img/botao-de-simbolo-de-telefone.png" alt="">
+                </a>
+                <a class="link linkedin" href="https://www.linkedin.com/in/rodrigo-sena-315838181/">
+                    <img src="/img/linkedin.png" alt="">
+                </a>
+                <a class="link github" href="https://github.com/Rodrigo1163?tab=repositories">
+                    <img src="/img/icons8-github-50.png" alt="">
+                </a>
+    
+            </div>
+        </div>
+        
+        <a href="https://api.whatsapp.com/send/?phone=5592994030985&text&type=phone_number&app_absent=0"
+        class="whatsapp">
+            <img src="/img/whatsapp.png" alt="">
+        </a>
+    
+    </main>
+
+</body>
+</html>
