@@ -1,24 +1,12 @@
-:root{
-    --bg-primery: #000000;
-    --text-light: #FFFFFF;
-    --text-dark: #242424;
-    --title-primary-color: #F5F5F7;
-    --subtitle-color: #6E6E73;
-    --action-color: #2997FF;
-    --action-bg-hover-curriculo: #6db0f0;
-    --tecnologias: #3d237c;
-    --color-email: red;
-    --color-linkedin: rgb(0, 45, 128);
-    --color-github: #ffffff;
-    --color-telefone: green;
-}
- 
-
 .headerMobile{
     display: none;
 }
 .closeMenu☰{
     display: none;
+}
+.curriculoMediaQuery{
+    display: none;
+    grid-area: curriculo;
 }
 .closeMenuX{
     display: flex;
@@ -29,6 +17,7 @@
     border-radius: 2px;
     background-color: black;
     
+    
 }
 #ckeckCloseMenu{
     display: none;
@@ -36,7 +25,7 @@
 
 
 #ckeckCloseMenu:checked ~ .headerMobile{
-    background-color: #441840;
+    background-color: var(--bg-primery);
     color: black;
 }
 #darkModeNav:checked ~ .headerMobile{
@@ -44,7 +33,8 @@
     color: black;
  }
 #darkModeNav:checked ~ .headerMobile .closeMenuX{
-    color: white;
+    color: var(--bg-primery);
+    font-weight: 800;
  }
  #darkModeNav:checked ~ .headerMobile h1{
     color: black;
@@ -72,6 +62,7 @@
         grid-template-areas: 
         "header"
         "apresentacao"
+        "curriculo"
         "contatos"
         "sobreMim"
         "projetos"
@@ -86,11 +77,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 2%;
-        border-bottom: 2px solid #6a3067;
+        border-bottom: 2px solid var(--text-light);
         position: fixed;
         top: 0;
         z-index: 3;
-        background-color: #441840;
+        background-color: var(--bg-primery);
         width: 100%;
         
         
@@ -130,13 +121,16 @@
         width: 250px;
         height: 250px;
         border-radius: 5%;
+        content: url("/img/perfil\ do\ portfolio.png");
     }
+    
     .descricao{
         line-height: 25px;
     }
     .sobreMim{
         width: 65%;
-        padding-top: 16em;
+        padding-top: 18em;
+        margin-bottom: 14em;
     }
     .sobreMim p{
         font-size: 14px;
@@ -156,7 +150,8 @@
         margin-top: 0;
     }
     .containerHabilidades{
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 10rem;
         gap: 20px;
     }
     .habilidades img{
@@ -176,65 +171,86 @@
 
     .containerContatos{
         justify-content: center;
-        gap: 0;
+        gap: 4px;
         margin-top: 10px;
         width: 100%;
         margin-bottom: 0;
         
     }
     .link{
-        padding: 10px;
+        width: 20px;
+        height: 20px;
+        padding: 30px;
     }
-    .email, .telefone, .linkedin, .github{
-        width: 20%;
-    }
+
+
     .containerContatos img{
-        width: 50px;
-        height: 50px;
-        border: 2px solid #441840;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0;
         
     }
 
     .projetos{
         margin-top: 10em;
-        padding-top: 0;
+        padding-top: 6em;
         margin-bottom: 10em;
     }
     .containerProjetos{
-        width: 10rem;
-        height: 14rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
         border-radius: 8px;
-        background-size: 300%;
-        margin-top: 0;
     }
-    .descricaoProjeto{
-        display: block;
-        opacity: 1;
-        width: 80%;
+    .boxProjetos{
+        width: 8em;
+        height: 10em;
+        object-fit: cover;
     }
+    .action{
+        display: none;
+    }
+    .curriculoMediaQuery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .btnCurriculo{
+        width: 250px;
+        height: 3em;
+        transition: 200ms;
+        border-radius: 4px;
+    }
+    
     /* menu Mobile */
     nav, nav ul{
         display: flex;
         align-items: center;
+        justify-content: space-around;
         bottom: 0;
+        height: auto;
         flex-direction: column;
+        z-index: 1;
     }
     nav{
-        background-color: rgb(33, 0, 39);
+        background-color: var(--bg-primery);
         padding: 0;
         border: none;
     }
     nav .buttonDarkMode{
         display: none;
     }
-    .nav-itens{
-        
+    .nav-itens a{
+        font-size: 20px;
+        color: var(--subtitle-color);
     }
     .links{
         margin-top: -400px;
     }
     .logo{
         margin-top: -100px;
+        font-size: 30px;
     }
     .ckeckContatos{
         display: none;
@@ -243,10 +259,19 @@
         display: none;
     }
     #ckeckCloseMenu:checked ~ .headerMobile{
-        color: white;
+        color: var(--text-light);
     }
     #ckeckCloseMenu:checked ~ .headerMobile .closeMenuX{
         display: none;
+        
+        
+    }
+    .closeMenuX{
+        color: var(--bg-primery);
+        background-color: var(--text-light);
+    }
+    h1{
+        color: white;
     }
     #ckeckCloseMenu:checked ~ .headerMobile .closeMenu☰{
         display: flex;
@@ -256,6 +281,7 @@
         height: 2rem;
         border-radius: 2px;
         background-color: black;
+        
 
     }
     

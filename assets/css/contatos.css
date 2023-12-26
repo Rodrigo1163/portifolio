@@ -78,28 +78,28 @@
 #darkModeMain:checked ~ .contatos .containerContatos .email{
     background-color: black;
 }
-#darkModeMain:checked ~ .contatos .containerContatos .email img{
+#darkModeMain:checked ~ .contatos .containerContatos .link img{
     background-color: white;
     border: 5px solid white;
 }
 #darkModeMain:checked ~ .contatos .containerContatos .telefone{
     background-color: black;
 }
-#darkModeMain:checked ~ .contatos .containerContatos .telefone img{
+#darkModeMain:checked ~ .contatos .containerContatos .link img{
     background-color: white;
     border: 5px solid white;
 }
 #darkModeMain:checked ~ .contatos .containerContatos .linkedin{
     background-color: black;
 }
-#darkModeMain:checked ~ .contatos .containerContatos .linkedin img{
+#darkModeMain:checked ~ .contatos .containerContatos .link img{
     background-color: white;
     border: 5px solid white;
 }
 #darkModeMain:checked ~ .contatos .containerContatos .github{
     background-color: black;
 }
-#darkModeMain:checked ~ .contatos .containerContatos .github img{
+#darkModeMain:checked ~ .contatos .containerContatos .link img{
     background-color: white;
     border: 5px solid white;
 }
